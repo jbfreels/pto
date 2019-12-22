@@ -1,8 +1,10 @@
 {
   "year": 2019,
   "total_pto": 280,
-  "2019-01-19": {
-    "hours": 40,
-    "note": "birthday"
+  "dates": {
+    "2019-01-19": {
+      "hours": 40,
+      "note": "birthday"
+    }
   }
 }

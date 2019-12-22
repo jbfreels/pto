@@ -4,12 +4,19 @@ from os import path
 
 class Year:
   total_pto = None
+  dates = []
   def __init__ (self, json):
     self.json = json
     self.__dict__.update (self.json)
 
-  def get_total_hours (self):
+  def totalHours (self):
     return self.total_pto
+
+  def totalRemaining (self):
+    rem = self.total_pto
+    for d in self.dates:
+      rem -= self.dates[d]['hours']
+    return rem
 
 class PTO:
   def __init__ (self):
